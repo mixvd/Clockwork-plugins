@@ -50,7 +50,7 @@ function ITEM:OnUse(player, itemEntity)
 		player:GiveItem(Clockwork.item:CreateInstance("steroids"));
 		player:GiveItem(Clockwork.item:CreateInstance("steroids"));
 	end;
-	if rand == 9 or rand2 == 9 then
+	if rand == 9 and rand2 == 9 then
 		Clockwork.player:Notify(player, "You found a weapon and two boxes of ammunition in the chest.");
 		player:GiveItem(Clockwork.item:CreateInstance("weapon_pistol"));
 		player:GiveItem(Clockwork.item:CreateInstance("ammo_pistol"));
