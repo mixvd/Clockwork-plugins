@@ -1,3 +1,5 @@
 # Mixed's Plugins Collection
 
-Here are my plugins collection, enjoy!
+My bunch of plugins for the Clockwork framework.
+
+Feel free to use it, edit it.
