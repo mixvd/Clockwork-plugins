@@ -1,4 +1,4 @@
-local ITEM = Clockwork.item:New("consumable_base");
+local ITEM = Clockwork.item:New();
 ITEM.name = "UU Pop corn";
 ITEM.cost = 0;
 ITEM.model = "models/bioshockinfinite/topcorn_bag.mdl";
