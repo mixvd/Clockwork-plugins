@@ -20,10 +20,11 @@ function ITEM:OnUse(player, itemEntity)
 				rand = 1;
 			end;
 
-			if rand == 1 or rand == 3 then
+			if rand == 1 or rand == 3 or rand == 17 then
 				Clockwork.player:Notify(player, "You have crocheted the chest successfully!");
 				player:GiveItem(Clockwork.item:CreateInstance("chest2"));
 			else
+			if rand == 47 or rand == 34 or rand == 26 then
 				Clockwork.player:Notify(player, "You broke the lock of the chest trying to crocheted it.");
 				player:GiveItem(Clockwork.item:CreateInstance("chest3"));
 			end;
