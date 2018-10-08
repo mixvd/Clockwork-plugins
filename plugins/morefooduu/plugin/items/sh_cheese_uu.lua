@@ -1,4 +1,4 @@
-local ITEM = Clockwork.item:New("consumable_base");
+local ITEM = Clockwork.item:New();
 ITEM.name = "UU Cheese";
 ITEM.cost = 0;
 ITEM.model = "models/bioshockinfinite/pound_cheese.mdl";
