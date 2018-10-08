@@ -2,18 +2,23 @@ local PLUGIN = PLUGIN;
 local Clockwork = Clockwork;
 
 function PLUGIN:OnNPCKilled(entity)
-	local class = entity:GetClass()
-	local items = {}
+    local class = entity:GetClass()
+    local items = {}
+    local random1 = math.random(1,10)
+    local random2 = math.random(1,10)
 
-	for k, v in pairs( Clockwork.item:GetAll() ) do
-		if (v.category == "Junk") then
-			table.insert(items, k)
-		end;
-	end;
-	
-	local RandomItem = table.Random(items)
-	if (class == "npc_zombie" or class == "npc_zombie_torso" or class == "npc_poisonzombie" or class == "npc_fastzombie" or class == "npc_headcrab") then
-		local Junk = Clockwork.item:CreateInstance(RandomItem);
-		Clockwork.entity:CreateItem(nil, Junk, entity:GetPos() + Vector(0, 0, 8))
-	end;
+    if (class == "npc_zombie") then
+        if random1 == 3 or random2 == 3 then
+        local loot = Clockwork.item:CreateInstance("breens_water");
+        Clockwork.entity:CreateItem(nil, loot, entity:GetPos() + Vector(0, 0, 8))
+        end;
+        if random1 == 4 or random2 == 4 then
+        local loot2 = Clockwork.item:CreateInstance("breens_water");
+        Clockwork.entity:CreateItem(nil, loot2, entity:GetPos() + Vector(0, 0, 8))
+        end;
+        if random1 == 5 or random2 == 5 then
+        local loot3 = Clockwork.item:CreateInstance("breens_water");
+        Clockwork.entity:CreateItem(nil, loot3, entity:GetPos() + Vector(0, 0, 8))
+        end;
+    end;
 end;
