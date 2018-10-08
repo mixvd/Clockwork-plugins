@@ -1,4 +1,4 @@
-local ITEM = Clockwork.item:New("consumable_base");
+local ITEM = Clockwork.item:New();
 ITEM.name = "Civil Protection Supplement";
 ITEM.cost = 0;
 ITEM.model = "models/mres/consumables/zag_mre.mdl";
@@ -9,7 +9,7 @@ ITEM.category = "Consumables";
 ITEM.business = true;
 ITEM.description = "A black box with a whitish soft paste.";
 
-function ITEM:OnUsedConsumable(player, itemEntity)
+function ITEM:OnUse(player, itemEntity)
 	player:BoostAttribute(self.name, ATB_STRENGTH, 5, 7200);
 	player:BoostAttribute(self.name, ATB_AGILITY, 5, 7200);
 	player:BoostAttribute(self.name, ATB_STAMINA, 5, 7200);
