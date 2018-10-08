@@ -1,4 +1,4 @@
-local ITEM = Clockwork.item:New("consumable_base");
+local ITEM = Clockwork.item:New();
 ITEM.name = "Ration of Loyalist Citizen";
 ITEM.cost = 0;
 ITEM.model = "models/pg_plops/pg_food/pg_tortellinap.mdl";
