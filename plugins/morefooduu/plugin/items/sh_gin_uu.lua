@@ -1,4 +1,4 @@
-local ITEM = Clockwork.item:New("consumable_base");
+local ITEM = Clockwork.item:New();
 ITEM.name = "UU Jin";
 ITEM.cost = 0;
 ITEM.model = "models/bioshockinfinite/jin_bottle.mdl";
