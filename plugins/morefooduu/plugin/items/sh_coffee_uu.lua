@@ -1,4 +1,4 @@
-local ITEM = Clockwork.item:New("consumable_base");
+local ITEM = Clockwork.item:New();
 ITEM.name = "UU Coffee";
 ITEM.cost = 0;
 ITEM.model = "models/bioshockinfinite/xoffee_mug_closed.mdl";
