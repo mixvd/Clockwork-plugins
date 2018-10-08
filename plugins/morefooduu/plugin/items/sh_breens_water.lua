@@ -1,11 +1,11 @@
 --[[
-	© 2013 CloudSixteen.com do not share, re-distribute or modify
+	Â© 2013 CloudSixteen.com do not share, re-distribute or modify
 	without permission of its author (kurozael@gmail.com).
 --]]
 
 local ITEM = Clockwork.item:New();
 ITEM.name = "Water Can";
-ITEM.cost = 10;
+ITEM.cost = 0;
 ITEM.model = "models/props_lunk/popcan01a.mdl";
 ITEM.weight = 0.5;
 ITEM.access = "1";
