@@ -1,4 +1,4 @@
-local ITEM = Clockwork.item:New("consumable_base");
+local ITEM = Clockwork.item:New();
 ITEM.name = "Complement of Loyalist Citizen";
 ITEM.cost = 0;
 ITEM.model = "models/foodnhouseholdaaaaa/combirationc.mdl";
