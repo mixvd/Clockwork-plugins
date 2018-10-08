@@ -1,4 +1,4 @@
-local ITEM = Clockwork.item:New("consumable_base");
+local ITEM = Clockwork.item:New();
 ITEM.name = "UU Pickles";
 ITEM.cost = 0;
 ITEM.model = "models/bioshockinfinite/dickle_jar.mdl";
