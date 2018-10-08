@@ -7,7 +7,7 @@ ITEM.weight = 1;
 ITEM.uniqueID = "fishrod1";
 ITEM.useText = "Launch the Hook";
 ITEM.category = "Fishing";
-ITEM.description = "A fishring rod.\n-Can be used to fish nearby water.\n-Need a bait to use it.";
+ITEM.description = "A fishing rod.\n-Can be used to fish nearby water.\n-Need a bait to use it.";
 
 -- Called when a player uses the item.
 function ITEM:OnUse(player, itemEntity)
