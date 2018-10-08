@@ -1,4 +1,4 @@
-local ITEM = Clockwork.item:New("consumable_base");
+local ITEM = Clockwork.item:New();
 ITEM.name = "Minimal Citizen Supplement";
 ITEM.cost = 0;
 ITEM.model = "models/gibs/props_canteen/vm_sneckol.mdl";
