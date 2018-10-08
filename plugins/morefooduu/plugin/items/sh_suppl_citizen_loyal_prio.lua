@@ -1,4 +1,4 @@
-local ITEM = Clockwork.item:New("consumable_base");
+local ITEM = Clockwork.item:New();
 ITEM.name = "Priority Loyalist Citizen Supplement";
 ITEM.cost = 0;
 ITEM.model = "models/probs_misc/tobdcco_box-1.mdl";
