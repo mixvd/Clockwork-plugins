@@ -2,7 +2,7 @@
 
 local ITEM = Clockwork.item:New();
 ITEM.name = "Wood Fishing Rod";
-ITEM.model = "models/Items/item_item_crate.mdl";
+ITEM.model = "models/Items/item_item_crate.mdl"; -- change the model
 ITEM.weight = 1;
 ITEM.uniqueID = "fishrod1";
 ITEM.useText = "Launch the Hook";
