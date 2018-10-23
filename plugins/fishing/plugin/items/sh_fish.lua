@@ -2,7 +2,7 @@
 
 local ITEM = Clockwork.item:New();
 ITEM.name = "Fish";
-ITEM.model = "models/Items/item_item_crate.mdl";
+ITEM.model = "models/Items/item_item_crate.mdl"; -- change the model
 ITEM.weight = 0.5;
 ITEM.uniqueID = "fish1";
 ITEM.category = "Fishing";
