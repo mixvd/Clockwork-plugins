@@ -9,6 +9,9 @@ ITEM.category = "Consumables";
 ITEM.business = true;
 ITEM.description = "A box of gray cereal with the effigy of a Milician who eats cereals, the shape of this one vaguely recalls the logo of the Union.";
 
+-- Called when a player uses the item.
+function ITEM:OnUse(player, itemEntity) end;
+
 -- Called when a player drops the item.
 function ITEM:OnDrop(player, position) end;
 
