@@ -7,7 +7,6 @@ ITEM.category = "Ration";
 ITEM.description = "A red plastic pouch containing the rationing of a loyalist citizen.\nIt contains:\n-1 Ration of Loyalist Citizen.\n-1 Supplement of Loyalist Citizen.\n-1 Complement of Loyalist Citizen.\n-1 Smooth Water Can.\n-2 Rationing Ticket.";
 
 function ITEM:OnUse(player, itemEntity)
-
 	Clockwork.player:Notify(player, "You opened a rationing pack.");
 	player:GiveItem(Clockwork.item:CreateInstance("Ration of Loyalist Citizen"));
 	player:GiveItem(Clockwork.item:CreateInstance("Supplement of Loyalist Citizen"));
