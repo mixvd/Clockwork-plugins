@@ -9,6 +9,9 @@ ITEM.category = "Consumables";
 ITEM.business = true;
 ITEM.description = "Canned sardines produced by the Universal Union is sardines does not really resemble that of your memories.";
 
+-- Called when a player uses the item.
+function ITEM:OnUse(player, itemEntity) end;
+
 -- Called when a player drops the item.
 function ITEM:OnDrop(player, position) end;
 
