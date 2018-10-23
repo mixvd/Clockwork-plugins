@@ -21,4 +21,19 @@ function PLUGIN:OnNPCKilled(entity)
         Clockwork.entity:CreateItem(nil, loot3, entity:GetPos() + Vector(0, 0, 8))
         end;
     end;
+    
+    if (class == "npc_headcrab") then
+        if random1 == 1 or random2 == 5 then
+        local loot = Clockwork.item:CreateInstance("breens_water");
+        Clockwork.entity:CreateItem(nil, loot, entity:GetPos() + Vector(0, 0, 8))
+        end;
+        if random1 == 9 or random2 == 8 then
+        local loot2 = Clockwork.item:CreateInstance("breens_water");
+        Clockwork.entity:CreateItem(nil, loot2, entity:GetPos() + Vector(0, 0, 8))
+        end;
+        if random1 == 3 or random2 == 6 then
+        local loot3 = Clockwork.item:CreateInstance("breens_water");
+        Clockwork.entity:CreateItem(nil, loot3, entity:GetPos() + Vector(0, 0, 8))
+        end;
+    end;
 end;
