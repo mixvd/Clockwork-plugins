@@ -13,18 +13,18 @@ ITEM.description = "A mystery chest.\n-Can be lockpick, you need a screwdriver t
 function ITEM:OnUse(player, itemEntity)
 	if (player:HasItemByID("screw_driver")) then
 		Clockwork.player:SetAction(player, "lockpicking", 16, 1, function()
-			local rand = math.random(1,50)
+			local rand = math.random(1,10)
 			local atb = Clockwork.attributes:Get(player, ATB_LOCKPICK)
 
 			if atb == 75 then
 				rand = 1;
 			end;
 
-			if rand == 1 or rand == 3 or rand == 17 then
+			if rand == 1 or rand == 2 then
 				Clockwork.player:Notify(player, "You have crocheted the chest successfully!");
 				player:GiveItem(Clockwork.item:CreateInstance("chest2"));
 			else
-			if rand == 47 or rand == 34 or rand == 26 then
+			if rand == 3 or rand == 4 or rand == 5 or rand == 6 or rand == 7 or rand == 8 or rand == 9 or rand == 10 then
 				Clockwork.player:Notify(player, "You broke the lock of the chest trying to crocheted it.");
 				player:GiveItem(Clockwork.item:CreateInstance("chest3"));
 			end;
