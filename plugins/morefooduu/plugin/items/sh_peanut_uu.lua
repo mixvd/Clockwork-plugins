@@ -9,6 +9,9 @@ ITEM.category = "Consumables";
 ITEM.business = true;
 ITEM.description = "A crunchy peanut package but they have a strange aftertaste.";
 
+-- Called when a player uses the item.
+function ITEM:OnUse(player, itemEntity) end;
+
 -- Called when a player drops the item.
 function ITEM:OnDrop(player, position) end;
 
